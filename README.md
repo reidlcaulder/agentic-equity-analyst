@@ -13,34 +13,3 @@ This tool serves as a proof-of-concept for **GenAI Business Solutions**, specifi
 1.  **Automated Due Diligence:** Rapidly screening stocks for red flags.
 2.  **Standardized Reporting:** Ensuring every analysis follows a strict, consistent framework.
 3.  **Risk/Reward Synthesis:** Using separate agent roles to force a debate between growth potential and downside risk.
-
-## The Agent Team (CrewAI)
-The system orchestrates three specialized agents:
-
-* **The Data Analyst:**
-    * *Role:* Quantitative Extraction.
-    * *Task:* Extracts key financial ratios, growth metrics, and insider trading activity.
-    * *Goal:* Provide a factual data foundation.
-* **The Risk Officer:**
-    * *Role:* Qualitative Risk Assessment.
-    * *Task:* Scans news and filings for regulatory threats, competitor moves, and market headwinds.
-    * *Goal:* Identify the "Bear Case" and downside scenarios.
-* **The Portfolio Manager:**
-    * *Role:* Strategic Synthesis.
-    * *Task:* Weighs the Analyst's data against the Risk Officer's warnings to produce a final "Buy/Sell/Hold" recommendation.
-    * *Goal:* Produce a decision-ready investment memo.
-
-## Technical Stack
-* **Orchestration:** [CrewAI](https://crewai.com) (Agent delegation and process management)
-* **Tools:** LangChain (PythonREPL, Web Search)
-* **Language:** Python 3.10+
-* **LLM Integration:** OpenAI GPT-4o
-
-## Quick Start
-1.  Clone the repository.
-2.  Install dependencies: `uv sync` or `pip install -r requirements.txt`.
-3.  Set your `.env` variables (OPENAI_API_KEY).
-4.  Run the analysis:
-    ```bash
-    crewai run
-    ```
