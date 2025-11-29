@@ -42,5 +42,5 @@ The system orchestrates three specialized agents:
 3.  Set your `.env` variables (OPENAI_API_KEY).
 4.  Run the analysis:
     ```bash
-    python src/stock_picker/main.py
+    crewai run
     ```
